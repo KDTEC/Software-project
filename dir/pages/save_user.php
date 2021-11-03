@@ -1,4 +1,3 @@
-
 <?php
 date_default_timezone_set('Asia/Kolkata');
 $current_date = date('Y-m-d');
@@ -23,26 +22,24 @@ $pass = hash('sha256', $salt . $passw);
 //       $msg = "Failed to upload image";
 //     }
 
-extract($_POST);//"INSERT INTO admin (username, email,password, fname, lname, gender,  dob,contact,    addr,notes,created_on,image,role_id)VALUES ('user', '$email','$pass', '$fname', '$lname', '$gender', '$dob', '$contact', '$addr','$notes',CURDATE(),'$image','$role_id')";
-/*  echo */ 
-$sql ="INSERT INTO admin (username,loginid,password,fname,lname,gender,dob,mobileno,addr,notes,created_on,image,role_id)VALUES ('user', '$email','$pass', '$fname', '$lname', 'male', '06/05/200', '$contact', '$addr','nil','$current_date','profile.jpg','1')";
+extract($_POST); //"INSERT INTO admin (username, email,password, fname, lname, gender,  dob,contact,    addr,notes,created_on,image,role_id)VALUES ('user', '$email','$pass', '$fname', '$lname', '$gender', '$dob', '$contact', '$addr','$notes',CURDATE(),'$image','$role_id')";
+/*  echo */
+$sql = "INSERT INTO admin (username,loginid,password,fname,lname,gender,dob,mobileno,addr,notes,created_on,image,role_id)VALUES ('user', '$email','$pass', '$fname', '$lname', 'male', '06/05/200', '$contact', '$addr','nil','$current_date','profile.jpg','1')";
 //echo "<pre>";print_r($sql); exit;
- if ($conn->query($sql) === TRUE) {
-      $_SESSION['success']=' Record Successfully Added';
-      
-     ?>
-<script type="text/javascript">
-window.location="../login.php";
-</script>
-<?php
-} else {
-      $_SESSION['error']='Something Went Wrong';
-      
+if ($conn->query($sql) === TRUE) {
+    $_SESSION['success'] = ' Record Successfully Added';
 
 ?>
-<!-- <script type="text/javascript">
+    <script type="text/javascript">
+        window.location = "../login.php";
+    </script>
+<?php
+} else {
+    $_SESSION['error'] = 'Something Went Wrong';
+
+
+?>
+    <!-- <script type="text/javascript">
 window.location="../login.php";
 </script> -->
 <?php } ?>
-
-
