@@ -1,3 +1,7 @@
+# ONLINE CLINIC SYSTEM
+
+### Steps for running project
+
 install xampp
 install Notepad++ or Sublime
 
@@ -15,7 +19,3 @@ open browser and enter url as localhost/your folder name
 
 Username : ndbhalerao91@gmail.com
 Password : admin
------------------------------------------
-for any Academic Project or Commercial Project Development work (PHP, CI or Laravel) contact me
-on +919423979339
-or email me at ndbhalerao91@gmail.com
