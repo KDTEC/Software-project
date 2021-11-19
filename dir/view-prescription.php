@@ -102,7 +102,7 @@ if (isset($_GET['delid'])) { ?>
 
         <div class="medicine-search">
           <form action="search.php" method="post">
-            <input type="search" id="form1" class="form-control" placeholder="Search Medicine..." />
+            <input type="search" name="med" id="form1" class="form-control" placeholder="Search Medicine..." />
             <button type="submit" name="medicine-sub" class="med-sub">
               <i class="feather icon-search"></i>
             </button>
