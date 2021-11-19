@@ -1,6 +1,3 @@
-<!-- Author Name: Nikhil Bhalerao +919423979339. 
-PHP, Laravel and Codeignitor Developer
--->
 <?php require_once('check_login.php'); ?>
 <?php include('head.php'); ?>
 <?php include('header.php'); ?>
@@ -93,7 +90,7 @@ if (isset($_GET['delid'])) { ?>
                   <li class="breadcrumb-item">
                     <a href="dashboard.php"> <i class="feather icon-home"></i> </a>
                   </li>
-                  <li class="breadcrumb-item"><a>View Prescription Record</a>
+                  <li class="breadcrumb-item"><a>Prescription</a>
                   </li>
                   <li class="breadcrumb-item"><a href="#">View Prescription Record</a>
                   </li>
@@ -103,9 +100,16 @@ if (isset($_GET['delid'])) { ?>
           </div>
         </div>
 
+        <div class="medicine-search">
+          <form action="search.php" method="post">
+            <input type="search" id="form1" class="form-control" placeholder="Search Medicine..." />
+            <button type="submit" name="medicine-sub" class="med-sub">
+              <i class="feather icon-search"></i>
+            </button>
+          </form>
+        </div>
+
         <div class="page-body">
-
-
           <?php
           $sql = "SELECT * FROM prescription where patientid='$_SESSION[patientid]'";
           $qsql = mysqli_query($conn, $sql);
@@ -136,12 +140,12 @@ if (isset($_GET['delid'])) { ?>
                     <tbody>
                       <?php
                       echo "<tr>
-    <td>&nbsp;$rsdoctor[doctorname]</td>
-    <td>&nbsp;$rspatient[patientname]</td>
-    <td>&nbsp;$rs[prescriptiondate]</td>
-    <td>&nbsp;$rs[status]</td>
-    
-    </tr>";
+                            <td>&nbsp;$rsdoctor[doctorname]</td>
+                            <td>&nbsp;$rspatient[patientname]</td>
+                            <td>&nbsp;$rs[prescriptiondate]</td>
+                            <td>&nbsp;$rs[status]</td>
+                            
+                            </tr>";
                       ?>
                     </tbody>
                     <tfoot>
@@ -172,12 +176,12 @@ if (isset($_GET['delid'])) { ?>
                       $qsqlprescription_records = mysqli_query($conn, $sqlprescription_records);
                       while ($rsprescription_records = mysqli_fetch_array($qsqlprescription_records)) {
                         echo "<tr>
-      <td>&nbsp;$rsprescription_records[medicinename]</td>
-      <td>&nbsp;$rsprescription_records[cost]</td>
-      <td>&nbsp;$rsprescription_records[unit]</td>
-      <td>&nbsp;$rsprescription_records[dosage]</td>
+                              <td>&nbsp;$rsprescription_records[medicinename]</td>
+                              <td>&nbsp;$rsprescription_records[cost]</td>
+                              <td>&nbsp;$rsprescription_records[unit]</td>
+                              <td>&nbsp;$rsprescription_records[dosage]</td>
 
-      </tr>";
+                              </tr>";
                       }
                       ?>
                     </tbody>

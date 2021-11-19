@@ -48,6 +48,24 @@ p {
 	}
 }
 
+.medicine-search .form-control {
+	width: 40%;
+	display: inline !important;
+}
+
+.medicine-search .form-control {
+	display: inline;
+}
+
+.medicine-search .med-sub {
+	padding: 0px 0px !important;
+	height: 35px !important;
+	width: 40px;
+	background-color: #404e67;
+	color: #eee;
+	border: none;
+}
+
 .media-left {
 	padding-right: 20px
 }
