@@ -76,6 +76,9 @@
         </li>
 -->
                                  <li class="">
+                                    <a href="doctor.php">
+                                         <span class="pcoded-mtext">Add Doctor</span>
+                                     </a>
                                      <a href="view-doctor.php">
                                          <span class="pcoded-mtext">View Doctor</span>
                                      </a>
