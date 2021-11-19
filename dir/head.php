@@ -5,7 +5,7 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
-  <title>Admin Panel</title>
+  <title>Online Clinic System</title>
 
 
   <meta charset="utf-8">
