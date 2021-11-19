@@ -81,7 +81,7 @@
                                     <ul class="show-notification notification-view dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                                         <li>
                                             <div class="media">
-                                                <img class="d-flex align-self-center img-radius" src="files/assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                                <img class="d-flex align-self-center img-radius" src="\uploadImage\Profile\4.jpg" alt="Generic placeholder image">
                                             </div>
                                         </li>
                                     </ul>
@@ -95,19 +95,19 @@
                                         <?php
 
                                         /*$sql = "select * from admin where id = '".$_SESSION["id"]."'";
-        $query=$conn->query($sql);
-        while($row=mysqli_fetch_array($query))
-        {
-            //print_r($row);
-            extract($row);
-            $fname = $row['fname'];
-            $lname = $row['lname'];
-            $email = $row['loginid'];
-            $contact = $row['mobileno'];
-            //$dob1 = $row['dob'];
-            $gender = $row['gender'];
-            $image = $row['image'];
-        }*/
+                                        $query=$conn->query($sql);
+                                        while($row=mysqli_fetch_array($query))
+                                        {
+                                            //print_r($row);
+                                            extract($row);
+                                            $fname = $row['fname'];
+                                            $lname = $row['lname'];
+                                            $email = $row['loginid'];
+                                            $contact = $row['mobileno'];
+                                            //$dob1 = $row['dob'];
+                                            $gender = $row['gender'];
+                                            $image = $row['image'];
+                                        }*/
                                         if ($_SESSION['user'] == 'admin') {
                                         ?>
 
