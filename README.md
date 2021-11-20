@@ -106,7 +106,7 @@ To get a local copy up and running follow these simple example steps.
     ```
 5. Start XAMPP servers - Apache and MySQL
    ![XAMPP Ready][xampp-ready]
-   
+
 6. Start PHP development server (at port of your choice) in Folder Directory via command line
    ```
     php -S localhost:5000
@@ -167,5 +167,5 @@ Don't forget to give the project a star! Thanks again!
 [stars-url]: https://github.com/KDTEC/Software-project/stargazers
 [issues-shield]: https://img.shields.io/github/issues/KDTEC/Software-project.svg?style=for-the-badge
 [issues-url]: https://github.com/KDTEC/Software-project/issues
-[product-screenshot]: Screenshots/admin-dashboard.png
-[xampp-ready]: Screenshots/xampp.png
+[product-screenshot]: screenshots/admin-dashboard.png
+[xampp-ready]: screenshots/xampp.png
