@@ -28,22 +28,21 @@
                              </a>
                              <ul class="pcoded-submenu">
                                  <?php if (($_SESSION['user'] == 'admin') || ($_SESSION['user'] == 'patient')) { ?>
-                                     <!--
-        <li class="">
-            <a href="appointment.php">
-                <span class="pcoded-mtext">New Appointment</span>
-            </a>
-        </li>
-    -->
+                                     <li class="">
+                                         <a href="appointment.php">
+                                             <span class="pcoded-mtext">New Appointment</span>
+                                         </a>
+                                     </li>
+
                                  <?php } ?>
                                  <?php if (($_SESSION['user'] == 'admin') || ($_SESSION['user'] == 'doctor')) { ?>
-                                     <!--
-        <li class="">
-            <a href="view-pending-appointment.php">
-                <span class="pcoded-mtext">View Pending Appointments</span>
-            </a>
-        </li>
-    -->
+
+                                     <li class="">
+                                         <a href="view-pending-appointment.php">
+                                             <span class="pcoded-mtext">Pending Appointments</span>
+                                         </a>
+                                     </li>
+
                                      <li class="">
                                          <a href="view-appointments-approved.php">
                                              <span class="pcoded-mtext">View Appointments</span>

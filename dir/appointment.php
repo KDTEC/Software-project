@@ -109,7 +109,7 @@ if (isset($_GET['editid'])) {
                                             $sqlpatient = "SELECT * FROM patient WHERE patientid='" . $_GET['patid'] . "'";
                                             $qsqlpatient = mysqli_query($con, $sqlpatient);
                                             $rspatient = mysqli_fetch_array($qsqlpatient);
-                                            echo $rspatient[patientname] . " (Patient ID - $rspatient[patientid])";
+                                            echo $rspatient["patientname"] . " (Patient ID - $rspatient[patientid])";
                                             echo "<input type='hidden' name='select4' value='$rspatient[patientid]'>";
                                         }
                                         ?>
@@ -123,7 +123,7 @@ if (isset($_GET['editid'])) {
                                                     $sqlpatient = "SELECT * FROM patient WHERE status='Active'";
                                                     $qsqlpatient = mysqli_query($conn, $sqlpatient);
                                                     while ($rspatient = mysqli_fetch_array($qsqlpatient)) {
-                                                        if ($rspatient[patientid] == $rsedit[patientid]) {
+                                                        if ($rspatient["patientid"] == $rsedit["patientid"]) {
                                                             echo "<option value='$rspatient[patientid]' selected>$rspatient[patientid] - $rspatient[patientname]</option>";
                                                         } else {
                                                             echo "<option value='$rspatient[patientid]'>$rspatient[patientid] - $rspatient[patientname]</option>";
@@ -142,7 +142,7 @@ if (isset($_GET['editid'])) {
                                                     $sqldepartment = "SELECT * FROM department WHERE status='Active'";
                                                     $qsqldepartment = mysqli_query($conn, $sqldepartment);
                                                     while ($rsdepartment = mysqli_fetch_array($qsqldepartment)) {
-                                                        if ($rsdepartment[departmentid] == $rsedit[departmentid]) {
+                                                        if ($rsdepartment["departmentid"] == $rsedit["departmentid"]) {
                                                             echo "<option value='$rsdepartment[departmentid]' selected>$rsdepartment[departmentname]</option>";
                                                         } else {
                                                             echo "<option value='$rsdepartment[departmentid]'>$rsdepartment[departmentname]</option>";
@@ -196,12 +196,12 @@ if (isset($_GET['editid'])) {
                                                 <select name="status" id="status" class="form-control" required="">
                                                     <option value="">-- Select One -- </option>
                                                     <option value="Active" <?php if (isset($_GET['patid'])) {
-                                                                                if ($rsedit[status] == 'Active') {
+                                                                                if ($rsedit["status"] == 'Active') {
                                                                                     echo 'selected';
                                                                                 }
                                                                             } ?>>Active</option>
                                                     <option value="Inactive" <?php if (isset($_GET['patid'])) {
-                                                                                    if ($rsedit[status] == 'Inactive') {
+                                                                                    if ($rsedit["status"] == 'Inactive') {
                                                                                         echo 'selected';
                                                                                     }
                                                                                 } ?>>Inactive</option>
