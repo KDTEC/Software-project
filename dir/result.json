@@ -1,39 +1,212 @@
 {
-    "url": "https:\/\/api.fda.gov\/drug\/event.json?api_key=4E4mbOg6MXYVaHvDlnzm1aeF5Xf5I249k1wRf7Ps&search=patient.drug.openfda.generic_name:\"paracetamol\"&limit=5",
-    "content_type": "application\/json; charset=utf-8",
-    "http_code": 200,
-    "header_size": 893,
-    "request_size": 177,
-    "filetime": -1,
-    "ssl_verify_result": 0,
-    "redirect_count": 0,
-    "total_time": 2.259087,
-    "namelookup_time": 0.00246,
-    "connect_time": 0.265501,
-    "pretransfer_time": 0.839123,
-    "size_upload": 0,
-    "size_download": 241535,
-    "speed_download": 106921,
-    "speed_upload": 0,
-    "download_content_length": 241535,
-    "upload_content_length": 0,
-    "starttransfer_time": 1.162728,
-    "redirect_time": 0,
-    "redirect_url": "",
-    "primary_ip": "64:ff9b::36e1:febb",
-    "certinfo": [],
-    "primary_port": 443,
-    "local_ip": "2402:3a80:1346:592:c86:d6f3:3410:f7c1",
-    "local_port": 52203,
-    "http_version": 2,
-    "protocol": 2,
-    "ssl_verifyresult": 0,
-    "scheme": "HTTPS",
-    "appconnect_time_us": 838922,
-    "connect_time_us": 265501,
-    "namelookup_time_us": 2460,
-    "pretransfer_time_us": 839123,
-    "redirect_time_us": 0,
-    "starttransfer_time_us": 1162728,
-    "total_time_us": 2259087
+  "meta": {
+    "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+    "terms": "https://open.fda.gov/terms/",
+    "license": "https://open.fda.gov/license/",
+    "last_updated": "2021-11-04",
+    "results": {
+      "skip": 0,
+      "limit": 1,
+      "total": 36669
+    }
+  },
+  "results": [
+    {
+      "reporttype": "1",
+      "receiptdateformat": "102",
+      "receiver": {
+        "receivertype": "6",
+        "receiverorganization": "FDA"
+      },
+      "companynumb": "US-ASTRAZENECA-2013SE50238",
+      "occurcountry": "US",
+      "safetyreportversion": "1",
+      "receivedateformat": "102",
+      "primarysource": {
+        "reportercountry": "US"
+      },
+      "duplicate": "1",
+      "transmissiondateformat": "102",
+      "fulfillexpeditecriteria": "2",
+      "safetyreportid": "10003376",
+      "sender": {
+        "sendertype": "2",
+        "senderorganization": "FDA-Public Use"
+      },
+      "receivedate": "20140312",
+      "patient": {
+        "patientonsetage": "62",
+        "patientonsetageunit": "801",
+        "patientweight": "88",
+        "patientsex": "1",
+        "reaction": [
+          {
+            "reactionmeddraversionpt": "17.0",
+            "reactionmeddrapt": "Diarrhoea",
+            "reactionoutcome": "2"
+          },
+          {
+            "reactionmeddraversionpt": "17.0",
+            "reactionmeddrapt": "Arthralgia",
+            "reactionoutcome": "2"
+          },
+          {
+            "reactionmeddraversionpt": "17.0",
+            "reactionmeddrapt": "Nausea",
+            "reactionoutcome": "2"
+          }
+        ],
+        "drug": [
+          {
+            "drugcharacterization": "1",
+            "medicinalproduct": "CASODEX",
+            "drugauthorizationnumb": "020498",
+            "drugdosagetext": "GENERIC, 50 MG, EVERY MORNING",
+            "drugadministrationroute": "048",
+            "drugindication": "PROSTATE CANCER METASTATIC",
+            "drugstartdateformat": "602",
+            "drugstartdate": "2013",
+            "drugenddateformat": "610",
+            "drugenddate": "201306",
+            "actiondrug": "1",
+            "openfda": {
+              "application_number": [
+                "NDA020498"
+              ],
+              "brand_name": [
+                "CASODEX"
+              ],
+              "generic_name": [
+                "BICALUTAMIDE"
+              ],
+              "manufacturer_name": [
+                "ANI Pharmaceuticals, Inc."
+              ],
+              "product_ndc": [
+                "62559-680"
+              ],
+              "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+              ],
+              "route": [
+                "ORAL"
+              ],
+              "substance_name": [
+                "BICALUTAMIDE"
+              ],
+              "rxcui": [
+                "108828",
+                "199123"
+              ],
+              "spl_id": [
+                "09a60ae0-2a64-49f7-88f2-6b06bf3d44b7"
+              ],
+              "spl_set_id": [
+                "dfee4fe7-8478-4a3e-925d-00be3cd0ab67"
+              ],
+              "package_ndc": [
+                "62559-680-30"
+              ],
+              "nui": [
+                "N0000000243",
+                "N0000175560"
+              ],
+              "pharm_class_moa": [
+                "Androgen Receptor Antagonists [MoA]"
+              ],
+              "pharm_class_epc": [
+                "Androgen Receptor Inhibitor [EPC]"
+              ],
+              "unii": [
+                "A0Z3NAU9DP"
+              ]
+            }
+          },
+          {
+            "drugcharacterization": "2",
+            "medicinalproduct": "LUPRON"
+          },
+          {
+            "drugcharacterization": "2",
+            "medicinalproduct": "IBUPROPHEN"
+          },
+          {
+            "drugcharacterization": "2",
+            "medicinalproduct": "ULRAM"
+          },
+          {
+            "drugcharacterization": "2",
+            "medicinalproduct": "PROSCAR",
+            "openfda": {
+              "application_number": [
+                "NDA020180"
+              ],
+              "brand_name": [
+                "PROSCAR"
+              ],
+              "generic_name": [
+                "FINASTERIDE"
+              ],
+              "manufacturer_name": [
+                "Organon LLC",
+                "Merck Sharp & Dohme Corp."
+              ],
+              "product_ndc": [
+                "78206-153",
+                "0006-0072"
+              ],
+              "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+              ],
+              "route": [
+                "ORAL"
+              ],
+              "substance_name": [
+                "FINASTERIDE"
+              ],
+              "rxcui": [
+                "201961",
+                "310346"
+              ],
+              "spl_id": [
+                "3e8b449e-a4c8-4e20-a32d-94b347a35f46",
+                "2745aa4b-c40a-48c3-9d50-85c0876bd478"
+              ],
+              "spl_set_id": [
+                "6f988153-fc74-4ca4-b29a-111f750c4a4b",
+                "7c01f541-1c88-400c-41a9-7cbb9dee50c0"
+              ],
+              "package_ndc": [
+                "78206-153-01",
+                "78206-153-02",
+                "0006-0072-31",
+                "0006-0072-58"
+              ],
+              "nui": [
+                "N0000175836",
+                "N0000000126"
+              ],
+              "pharm_class_epc": [
+                "5-alpha Reductase Inhibitor [EPC]"
+              ],
+              "pharm_class_moa": [
+                "5-alpha Reductase Inhibitors [MoA]"
+              ],
+              "unii": [
+                "57GNO57U7G"
+              ]
+            }
+          }
+        ]
+      },
+      "transmissiondate": "20141002",
+      "serious": "2",
+      "reportduplicate": {
+        "duplicatesource": "ASTRAZENECA",
+        "duplicatenumb": "US-ASTRAZENECA-2013SE50238"
+      },
+      "receiptdate": "20140312",
+      "primarysourcecountry": "US"
+    }
+  ]
 }

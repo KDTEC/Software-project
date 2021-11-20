@@ -6,17 +6,25 @@ include('connect.php');
 if (isset($_POST['medicine-sub'])) {
     $med = $_POST['med'];
     $med_rep = str_replace('/\s+/', '+', $med);
-    $url = 'https://api.fda.gov/drug/event.json?api_key=4E4mbOg6MXYVaHvDlnzm1aeF5Xf5I249k1wRf7Ps&search=patient.drug.openfda.generic_name:"'.$med_rep.'"&limit=5'; //'"+patient.drug.openfda.brand_name:'.$med_rep.
-    $ch = curl_init($url);
-    curl_exec($ch);
-    if (!curl_errno($ch)) {
-        $info = curl_getinfo($ch);
-        // $result = $info["results"];
-        $json = json_decode($info, true);
-        $jfile = fopen("result.json", "w") or die("Unable to open file!");
-        fwrite($jfile, $json);
+
+    $ch = curl_init();
+    $url = 'https://api.fda.gov/drug/event.json?api_key=4E4mbOg6MXYVaHvDlnzm1aeF5Xf5I249k1wRf7Ps&search=patient.drug.openfda.generic_name:"' . $med . '"+patient.drug.openfda.brand_name:"' . $med . '"&limit=3';
+
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    $data = curl_exec($ch);
+
+    if ($err = curl_error($ch)) {
+        echo "<p>" . $err . "</p>";
+    } else {
+        $result = json_decode($data, true);
+        $route = $result['results'][0]['patient']['drug'][0]['openfda']['route'][0];
+        $jfile = fopen("search-result.json", "w") or die("Unable to open file!");
+        fwrite($jfile, $data);
         fclose($jfile);
     }
+    
     curl_close($ch);
 }
 ?>
@@ -61,6 +69,7 @@ if (isset($_POST['medicine-sub'])) {
 
                 <div class="page-body">
                     <?php
+                    echo $route;
                     ?>
                 </div>
 
