@@ -64,7 +64,7 @@
             <nav class="navbar header-navbar pcoded-header">
                 <div class="navbar-wrapper">
 
-                    <div style="background-color: #404e67;width:18.65%;float:left;">
+                    <div style="background-color: #404e67;width:240px;float:left;">
                         <h5 style="padding-top:5px;margin-left:20px;color:#cccccc">Clinic Management System</h5>
 
                         <a href="dashboard.php"></a>
@@ -73,7 +73,7 @@
                         </a>
                     </div>
 
-                    <div class="navbar-container container-fluid" style="width:81.35%;float:right">
+                    <div class="navbar-container container-fluid" style="width:81%;float:right">
                         <ul class="nav-right">
                             <li class="header-notification">
                                 <div class="dropdown-primary dropdown">
