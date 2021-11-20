@@ -17,5 +17,6 @@ now extract sourcecode in C:\xampp\htdocs and give foldername what you want.
 step 4:
 open browser and enter url as localhost/your folder name
 
-Username : ndbhalerao91@gmail.com
+
+Username : admin@ocs.com
 Password : admin
