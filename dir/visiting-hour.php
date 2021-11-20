@@ -115,7 +115,7 @@ if (isset($_GET['editid'])) {
                                                         $sqldoctor = "SELECT * FROM doctor WHERE status='Active'";
                                                         $qsqldoctor = mysqli_query($con, $sqldoctor);
                                                         while ($rsdoctor = mysqli_fetch_array($qsqldoctor)) {
-                                                            if ($rsdoctor[doctorid] == $rsedit[doctorid]) {
+                                                            if ($rsdoctor["doctorid"] == $rsedit["doctorid"]) {
                                                                 echo "<option value='$rsdoctor[doctorid]' selected>$rsdoctor[doctorid] - $rsdoctor[doctorname]</option>";
                                                             } else {
                                                                 echo "<option value='$rsdoctor[doctorid]'>$rsdoctor[doctorid] - $rsdoctor[doctorname]</option>";

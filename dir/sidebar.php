@@ -28,22 +28,21 @@
                              </a>
                              <ul class="pcoded-submenu">
                                  <?php if (($_SESSION['user'] == 'admin') || ($_SESSION['user'] == 'patient')) { ?>
-                                     <!--
-        <li class="">
-            <a href="appointment.php">
-                <span class="pcoded-mtext">New Appointment</span>
-            </a>
-        </li>
-    -->
+                                     <li class="">
+                                         <a href="appointment.php">
+                                             <span class="pcoded-mtext">New Appointment</span>
+                                         </a>
+                                     </li>
+
                                  <?php } ?>
                                  <?php if (($_SESSION['user'] == 'admin') || ($_SESSION['user'] == 'doctor')) { ?>
-                                     <!--
-        <li class="">
-            <a href="view-pending-appointment.php">
-                <span class="pcoded-mtext">View Pending Appointments</span>
-            </a>
-        </li>
-    -->
+
+                                     <li class="">
+                                         <a href="view-pending-appointment.php">
+                                             <span class="pcoded-mtext">Pending Appointments</span>
+                                         </a>
+                                     </li>
+
                                      <li class="">
                                          <a href="view-appointments-approved.php">
                                              <span class="pcoded-mtext">View Appointments</span>
@@ -68,17 +67,14 @@
                                  <span class="pcoded-mtext">Doctors</span>
                              </a>
                              <ul class="pcoded-submenu">
-                                 <!--
-        <li class="">
-            <a href="doctor.php">
-                <span class="pcoded-mtext">New Doctor</span>
-            </a>
-        </li>
--->
+
                                  <li class="">
-                                    <a href="doctor.php">
+                                     <a href="doctor.php">
                                          <span class="pcoded-mtext">Add Doctor</span>
                                      </a>
+                                 </li>
+
+                                 <li class="">
                                      <a href="view-doctor.php">
                                          <span class="pcoded-mtext">View Doctor</span>
                                      </a>
@@ -247,12 +243,12 @@
                          </li>
                      <?php } ?>
 
-                     <!-- <li class="">
-<a href="setting.php">
-<span class="pcoded-micon"><i class="feather icon-bookmark"></i></span>
-<span class="pcoded-mtext">Settings</span>
-</a>
-</li> -->
+                     <li class="">
+                         <a href="setting.php">
+                             <span class="pcoded-micon"><i class="feather icon-bookmark"></i></span>
+                             <span class="pcoded-mtext">Settings</span>
+                         </a>
+                     </li>
 
                      <li>
                          <a href="logout.php">

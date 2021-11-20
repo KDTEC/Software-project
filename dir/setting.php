@@ -1,6 +1,3 @@
-<!-- Author Name: Nikhil Bhalerao +919423979339. 
-PHP, Laravel and Codeignitor Developer
--->
 <!DOCTYPE html>
 <html lang="en">
 <?php require_once('check_login.php'); ?>
@@ -125,26 +122,26 @@ while ($row = mysqli_fetch_array($query)) {
 
                 <div class="card-block">
 
-                  <div class="row">
+                  <div class="row" style="color: #eee;">
                     <div class="col-lg-12 col-xl-12">
-                      <div class="sub-title">Settings</div>
+                      <div class="sub-title" style="color: #eee;">Settings</div>
 
                       <ul class="nav nav-tabs  tabs" role="tablist">
                         <li class="nav-item">
                           <a class="nav-link active" data-toggle="tab" href="#general" role="tab">General</a>
                         </li>
                         <!-- <li class="nav-item">
-<a class="nav-link" data-toggle="tab" href="#repair" role="tab">Repair</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" data-toggle="tab" href="#invoice" role="tab">Invoice</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" data-toggle="tab" href="#sms" role="tab">SMS</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" data-toggle="tab" href="#payment" role="tab">Payment</a>
-</li> -->
+                          <a class="nav-link" data-toggle="tab" href="#repair" role="tab">Repair</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#invoice" role="tab">Invoice</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#sms" role="tab">SMS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#payment" role="tab">Payment</a>
+                        </li> -->
 
                       </ul>
 
@@ -203,8 +200,8 @@ while ($row = mysqli_fetch_array($query)) {
                                 <div class="col-sm-4">
                                   <select class="form-control" id="curr_position" name="curr_position" required="">
                                     <option value="<?php echo "right"; ?>" <?php if ($curr_position == 'right') {
-                                                                            echo "selected";
-                                                                          } ?>>Right</option>
+                                                                              echo "selected";
+                                                                            } ?>>Right</option>
                                     <option value="<?php echo "left"; ?>" <?php if ($curr_position == 'left') {
                                                                             echo "selected";
                                                                           } ?>>Left</option>
