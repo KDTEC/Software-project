@@ -243,12 +243,12 @@
                          </li>
                      <?php } ?>
 
-                     <!-- <li class="">
-<a href="setting.php">
-<span class="pcoded-micon"><i class="feather icon-bookmark"></i></span>
-<span class="pcoded-mtext">Settings</span>
-</a>
-</li> -->
+                     <li class="">
+                         <a href="setting.php">
+                             <span class="pcoded-micon"><i class="feather icon-bookmark"></i></span>
+                             <span class="pcoded-mtext">Settings</span>
+                         </a>
+                     </li>
 
                      <li>
                          <a href="logout.php">

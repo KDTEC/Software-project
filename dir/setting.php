@@ -1,6 +1,3 @@
-<!-- Author Name: Nikhil Bhalerao +919423979339. 
-PHP, Laravel and Codeignitor Developer
--->
 <!DOCTYPE html>
 <html lang="en">
 <?php require_once('check_login.php'); ?>
