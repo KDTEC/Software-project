@@ -131,10 +131,10 @@ if (isset($_GET['editid'])) {
                                                     $sqldepartment = "SELECT * FROM department WHERE status='Active'";
                                                     $qsqldepartment = mysqli_query($conn, $sqldepartment);
                                                     while ($rsdepartment = mysqli_fetch_array($qsqldepartment)) {
-                                                        if ($rsdepartment[departmentid] == $rsedit[departmentid]) {
-                                                            echo "<option value='$rsdepartment[departmentid]' selected>$rsdepartment[departmentname]</option>";
+                                                        if ($rsdepartment["departmentid"] == $rsedit["departmentid"]) {
+                                                            echo "<option value=".$rsdepartment['departmentid']." selected>".$rsdepartment["departmentname"]."</option>";
                                                         } else {
-                                                            echo "<option value='$rsdepartment[departmentid]'>$rsdepartment[departmentname]</option>";
+                                                            echo "<option value=".$rsdepartment['departmentid'].">".$rsdepartment["departmentname"]."</option>";
                                                         }
                                                     }
                                                     ?>

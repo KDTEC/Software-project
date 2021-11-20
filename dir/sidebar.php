@@ -68,17 +68,14 @@
                                  <span class="pcoded-mtext">Doctors</span>
                              </a>
                              <ul class="pcoded-submenu">
-                                 <!--
-        <li class="">
-            <a href="doctor.php">
-                <span class="pcoded-mtext">New Doctor</span>
-            </a>
-        </li>
--->
+
                                  <li class="">
-                                    <a href="doctor.php">
+                                     <a href="doctor.php">
                                          <span class="pcoded-mtext">Add Doctor</span>
                                      </a>
+                                 </li>
+
+                                 <li class="">
                                      <a href="view-doctor.php">
                                          <span class="pcoded-mtext">View Doctor</span>
                                      </a>
