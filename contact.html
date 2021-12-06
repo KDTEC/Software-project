@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Contact Form</title>
+
+    <style type="text/css">
+        .antispam {
+            display: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+        // split your email into two parts and remove the @ symbol
+        var first = "swaranjananayak";
+        var last = "gmail.com";
+    </script>
+
+    <link rel="stylesheet" href="dir\files\assets\css\contact.css">
+
+</head>
+
+<body>
+
+    <section id="contact">
+        <div class="contact-box">
+            <div class="contact-links">
+                <h2>CONTACT</h2>
+                <div class="links">
+                    <div class="link">
+                        <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <div class="link">
+                        <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+                    </div>
+                    <div class="link">
+                        <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form method="post" action="dir/contact.php">
+                    <div class="form-item">
+                        <input type="text" name="name" required>
+                        <label>Name:</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="text" name="email" required>
+                        <label>Email:</label>
+                    </div>
+                    <p class="antispam">Leave this empty:
+                        <br /><input name="url" /></p>
+                    <div class="form-item">
+                        <textarea class="" name="message" required></textarea>
+                        <label>Message:</label>
+                    </div>
+                    <button class="submit-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

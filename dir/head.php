@@ -5,7 +5,7 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
-  <title>Online Clinic System</title>
+  <title>Appointify</title>
 
 
   <meta charset="utf-8">
@@ -22,7 +22,7 @@
     $logo = $row['logo'];
   }
   ?>
-  <link rel="icon" href="uploadImage/Logo/<?php echo $logo; ?>" type="image/x-icon">
+  <link rel="icon" href="uploadImage/Logo/online.png" type="image/x-icon">
   <link href="files/assets/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 
