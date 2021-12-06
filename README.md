@@ -55,6 +55,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+[![Landing Page Screen Shot][landing-screenshot]](https://github.com/KDTEC/Software-project)
+
 [![Product Name Screen Shot][product-screenshot]](https://github.com/KDTEC/Software-project)
 
 The Online Clinic System is specifically designed to delineate the boundaries of the Healthcare Information System design provides clinical Management Activities and functionality that enables you to effectively manage your practice, providing standards-based integration points to schedule an appointment, Online Follow-ups, complete reports, Laboratory Information. 
@@ -167,5 +169,6 @@ Don't forget to give the project a star! Thanks again!
 [stars-url]: https://github.com/KDTEC/Software-project/stargazers
 [issues-shield]: https://img.shields.io/github/issues/KDTEC/Software-project.svg?style=for-the-badge
 [issues-url]: https://github.com/KDTEC/Software-project/issues
-[product-screenshot]: screenshots/admin-dashboard.png
+[product-screenshot]: screenshots/admin.png
+[landing-screenshot]: screenshots/landing.png
 [xampp-ready]: screenshots/xampp.png
