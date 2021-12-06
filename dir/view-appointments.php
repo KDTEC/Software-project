@@ -1,20 +1,22 @@
-<!-- Author Name: Nikhil Bhalerao +919423979339. 
-PHP, Laravel and Codeignitor Developer
--->
 <?php require_once('check_login.php'); ?>
 <?php include('head.php'); ?>
 <?php include('header.php'); ?>
 <?php include('sidebar.php'); ?>
 <?php include('connect.php');
+//  error_reporting(0);
+//  ini_set('display_errors', 0);
+//  ini_set('display_startup_errors', 0);
 if (isset($_GET['id'])) {
   $sql = "UPDATE appointment SET delete_status='1' WHERE departmentid='$_GET[id]'";
   $qsql = mysqli_query($conn, $sql);
+
+  error_reporting(0);
   if (mysqli_affected_rows($conn) == 1) {
 ?>
     <div class="popup popup--icon -success js_success-popup popup--visible">
       <div class="popup__background"></div>
       <div class="popup__content">
-        <h3 class="popup__content__title">
+        <h3 class="popup_content_title">
           Success
         </h3>
         <p>Appoinrment record deleted successfully</p>
@@ -39,7 +41,7 @@ if (isset($_GET['approveid'])) {
     <div class="popup popup--icon -success js_success-popup popup--visible">
       <div class="popup__background"></div>
       <div class="popup__content">
-        <h3 class="popup__content__title">
+        <h3 class="popup_content_title">
           Success
         </h3>
         <p>Appointment record Approved successfully.</p>
@@ -60,7 +62,7 @@ if (isset($_GET['delid'])) { ?>
   <div class="popup popup--icon -question js_question-popup popup--visible">
     <div class="popup__background"></div>
     <div class="popup__content">
-      <h3 class="popup__content__title">
+      <h3 class="popup_content_title">
         Sure
         </h1>
         <p>Are You Sure To Delete This Record?</p>
@@ -121,6 +123,9 @@ if (isset($_GET['delid'])) { ?>
                       <th>
                         <div align="center">Action</div>
                       </th>
+                      <th>
+                        <div align="center">Chat</div>
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -145,9 +150,9 @@ if (isset($_GET['delid'])) { ?>
                       $rsdoc = mysqli_fetch_array($qsqldoc);
                       echo "<tr>
           <td>&nbsp;$rspat[patientname]<br>&nbsp;$rspat[mobileno]</td>     
-       <td>&nbsp;" . date("d-M-Y", strtotime($rs[appointmentdate])) . " &nbsp; " . date("H:i A", strtotime($rs[appointmenttime])) . "</td> 
-        <td>&nbsp;$rsdept[departmentname]</td>
-         <td>&nbsp;$rsdoc[doctorname]</td>
+          <td>&nbsp;" . date("d-M-Y", strtotime($rs['appointmentdate'])) . " &nbsp; " . date("H:i A", strtotime($rs['appointmenttime'])) . "</td> 
+          <td>&nbsp;$rsdept[departmentname]</td>
+          <td>&nbsp;$rsdoc[doctorname]</td>
           <td>&nbsp;$rs[app_reason]</td>
           <td>&nbsp;$rs[status]</td>
           <td><div align='center'>";
@@ -159,7 +164,18 @@ if (isset($_GET['delid'])) { ?>
                       } else {
                         echo "<a href='patientreport.php?patientid=$rs[patientid]&appointmentid=$rs[appointmentid]'>View Report</a>";
                       }
-                      echo "</center></td></tr>";
+                      echo "</center></td>
+     <td
+        align='center'
+        >
+        <a href='http://localhost:5000/chat?name=$_SESSION[fname]&room=$rs[patientid]' 
+        target='_blank'>
+        <img src='
+        https://cdn.iconscout.com/icon/free/png-256/chat-2639493-2187526.png
+        '></img></a>
+        </td>
+     
+     </tr>";
                     }
                     ?>
                   </tbody>
@@ -173,6 +189,9 @@ if (isset($_GET['delid'])) { ?>
                       <th>Status</th>
                       <th>
                         <div align="center">Action</div>
+                      </th>
+                      <th>
+                        <div align="center">Chat</div>
                       </th>
                     </tr>
                   </tfoot>
@@ -200,7 +219,7 @@ if (isset($_GET['delid'])) { ?>
   <div class="popup popup--icon -success js_success-popup popup--visible">
     <div class="popup__background"></div>
     <div class="popup__content">
-      <h3 class="popup__content__title">
+      <h3 class="popup_content_title">
         Success
         </h1>
         <p><?php echo $_SESSION['success']; ?></p>
@@ -216,7 +235,7 @@ if (isset($_GET['delid'])) { ?>
   <div class="popup popup--icon -error js_error-popup popup--visible">
     <div class="popup__background"></div>
     <div class="popup__content">
-      <h3 class="popup__content__title">
+      <h3 class="popup_content_title">
         Error
         </h1>
         <p><?php echo $_SESSION['error']; ?></p>

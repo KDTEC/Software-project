@@ -1,6 +1,3 @@
-<!-- Author Name: Nikhil Bhalerao +919423979339. 
-PHP, Laravel and Codeignitor Developer
--->
 <?php require_once('check_login.php'); ?>
 <?php include('head.php'); ?>
 <?php include('header.php'); ?>
@@ -117,7 +114,22 @@ if (isset($_GET['delid'])) { ?>
           <a href='view-patient.php?delid=$rs[patientid]' class='btn btn-danger'>Delete</a> <hr>
           <a href='patientreport.php?patientid=$rs[patientid]' class='btn btn-success'>View Report</a>";
                       }
-                      echo "</td></tr>";
+                      ////////
+
+                      echo "</td>
+                      <td
+                      align='center'
+                      >
+                      <a href='http://localhost:5000/chat?name=$_SESSION[fname]&room=$rs[patientid]' 
+                      target='_blank'>
+                      <img src='
+                      https://cdn.iconscout.com/icon/free/png-256/chat-2639493-2187526.png
+                      '></img></a>
+                      </td>
+                      </tr>";
+
+                      /////////
+                      //echo "</td></tr>";
                     }
                     ?>
                   </tbody>
