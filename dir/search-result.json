@@ -7,21 +7,43 @@
     "results": {
       "skip": 0,
       "limit": 2,
-      "total": 92391
+      "total": 92384
     }
   },
   "results": [
     {
-      "reporttype": "1",
       "safetyreportversion": "1",
+      "safetyreportid": "10003359",
+      "primarysourcecountry": "GB",
+      "occurcountry": "GB",
+      "transmissiondateformat": "102",
+      "transmissiondate": "20141002",
+      "reporttype": "1",
+      "serious": "1",
+      "seriousnesshospitalization": "1",
       "receivedateformat": "102",
+      "receivedate": "20140312",
+      "receiptdateformat": "102",
+      "receiptdate": "20140312",
+      "fulfillexpeditecriteria": "1",
+      "companynumb": "GB-WATSON-2014-04160",
+      "duplicate": "1",
+      "reportduplicate": {
+        "duplicatesource": "WATSON",
+        "duplicatenumb": "GB-WATSON-2014-04160"
+      },
       "primarysource": {
         "reportercountry": "GB",
         "qualification": "5"
       },
-      "transmissiondateformat": "102",
-      "fulfillexpeditecriteria": "1",
-      "safetyreportid": "10003359",
+      "sender": {
+        "sendertype": "2",
+        "senderorganization": "FDA-Public Use"
+      },
+      "receiver": {
+        "receivertype": "6",
+        "receiverorganization": "FDA"
+      },
       "patient": {
         "patientonsetage": "41",
         "patientonsetageunit": "801",
@@ -56,9 +78,9 @@
                 "ANDA210664",
                 "ANDA065285",
                 "NDA050805",
+                "ANDA065454",
                 "ANDA091605",
                 "ANDA209165",
-                "ANDA065454",
                 "ANDA204446",
                 "ANDA209582",
                 "ANDA062992",
@@ -94,6 +116,7 @@
                 "Acella Pharmaceuticals, LLC",
                 "Lannett Company, Inc.",
                 "Galderma Laboratories, L.P.",
+                "Chartwell Governmental & Specialty RX, LLC",
                 "Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.",
                 "Prasco Laboratories",
                 "Alembic Pharmaceuticals Limited",
@@ -134,6 +157,11 @@
                 "0527-1338",
                 "0527-1537",
                 "0299-3822",
+                "68999-417",
+                "68999-625",
+                "68999-626",
+                "68999-984",
+                "68999-985",
                 "23155-133",
                 "23155-134",
                 "23155-135",
@@ -250,6 +278,7 @@
                 "cd3bc205-aa4b-4bc4-e053-2995a90a0754",
                 "1dcf8463-ada2-4215-9c6c-c4ef200cc47f",
                 "b647f3c3-291f-4e39-a3c7-f8af27288924",
+                "d0e9386e-bb36-15c7-e053-2a95a90ab5a1",
                 "90713c1e-c1a9-4607-aea2-687b4019a2ed",
                 "9d0efb1e-9fab-4d30-960f-824d49427b42",
                 "b20453db-3921-42de-84b4-7bb28bbce9da",
@@ -291,6 +320,7 @@
                 "3fb9f5ad-90a2-4858-bc34-f800d8b2fa90",
                 "4999bbd9-44ed-4749-9730-be2337bdf490",
                 "aa15c93a-ff4c-447a-8a21-96da506d8997",
+                "b8486639-7eb9-4610-9cd4-0e922045d592",
                 "2bcde264-5f6f-47f6-ae2e-1b7010deacf7",
                 "22b7035c-6874-4cf4-ad73-06a105bffc64",
                 "3dfa486c-4665-4882-93ac-9259708f899c",
@@ -361,6 +391,19 @@
                 "0299-3822-04",
                 "0299-3822-02",
                 "0299-3822-07",
+                "68999-625-60",
+                "68999-626-28",
+                "68999-626-30",
+                "68999-626-50",
+                "68999-626-23",
+                "68999-626-31",
+                "68999-626-40",
+                "68999-626-96",
+                "68999-984-50",
+                "68999-985-50",
+                "68999-985-05",
+                "68999-985-10",
+                "68999-417-46",
                 "23155-133-30",
                 "23155-133-05",
                 "23155-133-01",
@@ -797,29 +840,7 @@
             }
           }
         ]
-      },
-      "serious": "1",
-      "reportduplicate": {
-        "duplicatesource": "WATSON",
-        "duplicatenumb": "GB-WATSON-2014-04160"
-      },
-      "receiptdate": "20140312",
-      "receiptdateformat": "102",
-      "receiver": {
-        "receivertype": "6",
-        "receiverorganization": "FDA"
-      },
-      "companynumb": "GB-WATSON-2014-04160",
-      "occurcountry": "GB",
-      "duplicate": "1",
-      "sender": {
-        "sendertype": "2",
-        "senderorganization": "FDA-Public Use"
-      },
-      "receivedate": "20140312",
-      "seriousnesshospitalization": "1",
-      "transmissiondate": "20141002",
-      "primarysourcecountry": "GB"
+      }
     },
     {
       "safetyreportversion": "1",
@@ -1079,7 +1100,7 @@
               ],
               "spl_id": [
                 "495105e5-3361-48c3-bdac-14828718eeff",
-                "18accff4-6d92-4c51-b88d-ecaf77de5db1",
+                "317e8c26-a7c9-4330-bdf2-bd7d952df5b2",
                 "0f6c1550-cb3a-4b88-acfa-06928a8f60cb",
                 "6b0b227f-b5a4-48ef-9969-e2b924911ee8",
                 "dc0960f8-7ea5-4809-82d9-9c6bb0f10b08",

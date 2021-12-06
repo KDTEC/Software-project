@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    width: 30%;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: linear-gradient(90deg, #ffffff 0%, #ffffff 55%, #fff0e8 55%, #fff0e8 100%);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 6rem;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 50%;
+}
+
+.btn {
+    padding: 18px 34px;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    color: #fff;
+    background-color: #2e937a;
+    border-color: #2e937a;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    nav .logo {
+        text-align: center;
+        width: 100%;
+    }
+    nav ul {
+        padding-inline-start: 0;
+        margin: 0.2rem;
+    }
+    .hero {
+        background-image: linear-gradient(180deg, #ffffff 0%, #ffffff 55%, #fff0e8 55%, #fff0e8 100%);
+    }
+    h1 {
+        margin-bottom: 0;
+    }
+    .content-wrapper {
+        max-width: 100% !important;
+        margin-top: auto;
+    }
+    img {
+        width: 60%;
+        margin: 0 auto;
+        padding: 2rem 0 2rem 0;
+    }
+}
+
+@media screen and (min-width:100px) {
+    .hero {
+        padding-top: 6rem
+    }
+}
+
+
+/******************************************* FOOTER STYLING ***********************************/
+
+footer {
+    position: relative;
+    text-align: center;
+}
+
+.footer-distributed {
+    background-color: #d3d3d3d3;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font: bold 16px;
+}
+
+.footer-distributed {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+    padding: 5px;
+}
+
+.footer-links a:hover {
+    background-color: black;
+    text-decoration: underline;
+}
+
+.footer-distributed .footer-company-name {
+    color: #2e937a;
+    font-size: 14px;
+    font-weight: normal;
+    /* margin: 0; */
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #2e937a;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-icons a:hover {
+    background-color: black;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
+}

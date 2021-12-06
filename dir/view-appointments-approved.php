@@ -1,13 +1,10 @@
-<!-- Author Name: Nikhil Bhalerao +919423979339. 
-PHP, Laravel and Codeignitor Developer
--->
 <?php require_once('check_login.php'); ?>
 <?php include('head.php'); ?>
 <?php include('header.php'); ?>
 <?php include('sidebar.php'); ?>
 <?php include('connect.php');
 if (isset($_GET['delid'])) {
-  $sql = "UPDATE appointment SET delete_status='1' WHERE appointmentid='$_GET[delid]'";
+  $sql = "UPDATE appointment SET delete_status='1' WHERE appointmentid=" . $_GET['delid'];
   $qsql = mysqli_query($conn, $sql);
   if (mysqli_affected_rows($conn) == 1) {
 ?>
@@ -30,10 +27,10 @@ if (isset($_GET['delid'])) {
   }
 }
 if (isset($_GET['approveid'])) {
-  $sql = "UPDATE patient SET status='Active' WHERE patientid='$_GET[patientid]'";
+  $sql = "UPDATE patient SET status='Active' WHERE patientid=" . $_GET['patientid'];
   $qsql = mysqli_query($conn, $sql);
 
-  $sql = "UPDATE appointment SET status='Approved' WHERE appointmentid='$_GET[approveid]'";
+  $sql = "UPDATE appointment SET status='Approved' WHERE appointmentid=" . $_GET['approveid'];
   $qsql = mysqli_query($conn, $sql);
   if (mysqli_affected_rows($conn) == 1) {
   ?>
@@ -127,38 +124,38 @@ if (isset($_GET['id'])) { ?>
                     <?php
                     $sql = "SELECT * FROM appointment WHERE (status='Approved' OR status='Active') and delete_status = '0'";
                     if (isset($_SESSION['patientid'])) {
-                      $sql  = $sql . " AND patientid='$_SESSION[patientid]'";
+                      $sql  = $sql . " AND patientid=" . $_SESSION['patientid'];
                     }
                     $qsql = mysqli_query($conn, $sql);
                     while ($rs = mysqli_fetch_array($qsql)) {
-                      $sqlpat = "SELECT * FROM patient WHERE patientid='$rs[patientid]'";
+                      $sqlpat = "SELECT * FROM patient WHERE patientid=" . $rs['patientid'];
                       $qsqlpat = mysqli_query($conn, $sqlpat);
                       $rspat = mysqli_fetch_array($qsqlpat);
 
 
-                      $sqldept = "SELECT * FROM department WHERE departmentid='$rs[departmentid]'";
+                      $sqldept = "SELECT * FROM department WHERE departmentid=" . $rs['departmentid'];
                       $qsqldept = mysqli_query($conn, $sqldept);
                       $rsdept = mysqli_fetch_array($qsqldept);
 
-                      $sqldoc = "SELECT * FROM doctor WHERE doctorid='$rs[doctorid]'";
+                      $sqldoc = "SELECT * FROM doctor WHERE doctorid=" . $rs['doctorid'];
                       $qsqldoc = mysqli_query($conn, $sqldoc);
                       $rsdoc = mysqli_fetch_array($qsqldoc);
                       echo "<tr>
 
-          <td>&nbsp;$rspat[patientname]<br>&nbsp;$rspat[mobileno]</td>     
+          <td>&nbsp;" . $rspat['patientname'] . "<br>&nbsp;" . $rspat['mobileno'] . "</td>     
           <td>&nbsp;" . date("d-M-Y", strtotime($rs['appointmentdate'])) . " &nbsp; " . date("H:i A", strtotime($rs['appointmenttime'])) . "</td> 
-          <td>&nbsp;$rsdept[departmentname]</td>
-          <td>&nbsp;$rsdoc[doctorname]</td>
-          <td>&nbsp;$rs[app_reason]</td>
-          <td>&nbsp;$rs[status]</td>
+          <td>&nbsp;" . $rsdept['departmentname'] . "</td>
+          <td>&nbsp;" . $rsdoc['doctorname'] . "</td>
+          <td>&nbsp;" . $rs['app_reason'] . "</td>
+          <td>&nbsp;" . $rs['status'] . "</td>
           <td>";
                       if ($rs['status'] != "Approved") {
                         if (!(isset($_SESSION['patientid']))) {
-                          echo "<a href='view-pending-appointment.php?approveid=$rs[appointmentid]&patientid=$rs[patientid]' class='btn btn-xs btn-primary'>Approve</a>";
+                          echo "<a href='view-pending-appointment.php?approveid=" . $rs['appointmentid'] . "&patientid=" . $rs['patientid'] . "' class='btn btn-xs btn-primary'>Approve</a>";
                         }
-                        echo "  <a href='view-pending-appointment.php?id=$rs[appointmentid]' class='btn btn-xs btn-danger'>Delete</a>";
+                        echo "  <a href='view-pending-appointment.php?id=" . $rs['appointmentid'] . "' class='btn btn-xs btn-danger'>Delete</a>";
                       } else {
-                        echo "<a href='patientreport.php?patientid=$rs[patientid]&appointmentid=$rs[appointmentid]' class='btn btn-xs btn-primary'>View Report</a>";
+                        echo "<a href='patientreport.php?patientid=" . $rs['patientid'] . "&appointmentid=" . $rs['appointmentid'] . "' class='btn btn-xs btn-primary'>View Report</a>";
                       }
                       echo "</td></tr>";
                     }
@@ -179,13 +176,6 @@ if (isset($_GET['id'])) { ?>
               </div>
             </div>
           </div>
-
-
-
-
-
-
-
         </div>
 
       </div>
