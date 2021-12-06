@@ -65,7 +65,10 @@
                 <div class="navbar-wrapper">
 
                     <div style="background-color: #404e67;width:240px;float:left;">
-                        <h5 style="padding-top:5px;margin-left:20px;color:#cccccc">Clinic Management System</h5>
+                        <h3 style="padding-top:20px;margin-left:20px;color:#cccccc">
+                            <img height="30px" width="30px" src="uploadImage\Logo\online.png" alt="Logo">
+                            APPOINTIFY
+                        </h3>
 
                         <a href="dashboard.php"></a>
                         <a class="mobile-options">
