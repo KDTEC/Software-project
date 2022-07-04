@@ -94,6 +94,10 @@ This Project provides security for the users with the use of Login-id and Passwo
 <!-- GETTING STARTED -->
 ## Getting Started
 
+### Steps to use our application
+
+[![Steps Screen Shot][steps-screenshot]](https://github.com/KDTEC/Software-project)
+
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
@@ -181,4 +185,5 @@ Don't forget to give the project a star! Thanks again!
 [landing-screenshot]: screenshots/landing.png
 [doctor-screenshot]: screenshots/doctor.png
 [patient-screenshot]: screenshots/patient.png
+[steps-screenshot]: screenshots/steps.png
 [xampp-ready]: screenshots/xampp.png
