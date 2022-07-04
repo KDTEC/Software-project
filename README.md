@@ -154,7 +154,6 @@ Don't forget to give the project a star! Thanks again!
 
 * Kshitij Dhawan - kshitij.dhawan310@gmail.com
 * Swaranjana Nayak - swaranjananayak@gmail.com
-* Vaishnavi Sharma
 * Project Link: [https://github.com/KDTEC/Software-project](https://github.com/KDTEC/Software-project)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
