@@ -59,6 +59,14 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/KDTEC/Software-project)
 
+### Doctor Dashboard
+
+[![Doctor Name Screen Shot][doctor-screenshot]](https://github.com/KDTEC/Software-project)
+
+### Patient Dashboard
+
+[![Patient Name Screen Shot][patient-screenshot]](https://github.com/KDTEC/Software-project)
+
 The Online Clinic System is specifically designed to delineate the boundaries of the Healthcare Information System design provides clinical Management Activities and functionality that enables you to effectively manage your practice, providing standards-based integration points to schedule an appointment, Online Follow-ups, complete reports, Laboratory Information. 
 
 It maintains 3 types of users:
@@ -171,4 +179,6 @@ Don't forget to give the project a star! Thanks again!
 [issues-url]: https://github.com/KDTEC/Software-project/issues
 [product-screenshot]: screenshots/admin.png
 [landing-screenshot]: screenshots/landing.png
+[doctor-screenshot]: screenshots/doctor.png
+[patient-screenshot]: screenshots/patient.png
 [xampp-ready]: screenshots/xampp.png
