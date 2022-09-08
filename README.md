@@ -200,6 +200,6 @@ Don't forget to give the project a star! Thanks again!
 [patient-screenshot]: screenshots/patient.png
 [steps-screenshot]: screenshots/steps.png
 [xampp-ready]: screenshots/xampp.png
-[medicine-screenshot]: screenshots/medicine.png
+[medicine-screenshot]: screenshots/medicine.PNG
 [doc-apt-screenshot]: screenshots/doc-apt.PNG
 [chat-screenshot]: screenshots/chat.PNG
