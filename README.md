@@ -63,9 +63,23 @@
 
 [![Doctor Name Screen Shot][doctor-screenshot]](https://github.com/KDTEC/Software-project)
 
+### Appointments page
+
+[![Appointment Name Screen Shot][doc-apt-screenshot]](https://github.com/KDTEC/Software-project)
+
 ### Patient Dashboard
 
 [![Patient Name Screen Shot][patient-screenshot]](https://github.com/KDTEC/Software-project)
+
+
+### Medicine search page
+
+[![Medicine Name Screen Shot][medicine-screenshot]](https://github.com/KDTEC/Software-project)
+
+
+### Chat window
+
+[![Chat Name Screen Shot][chat-screenshot]](https://github.com/KDTEC/Software-project)
 
 The Online Clinic System is specifically designed to delineate the boundaries of the Healthcare Information System design provides clinical Management Activities and functionality that enables you to effectively manage your practice, providing standards-based integration points to schedule an appointment, Online Follow-ups, complete reports, Laboratory Information. 
 
@@ -186,3 +200,6 @@ Don't forget to give the project a star! Thanks again!
 [patient-screenshot]: screenshots/patient.png
 [steps-screenshot]: screenshots/steps.png
 [xampp-ready]: screenshots/xampp.png
+[medicine-screenshot]: screenshots/medicine.png
+[doc-apt-screenshot]: screenshots/doc-apt.PNG
+[chat-screenshot]: screenshots/chat.PNG
